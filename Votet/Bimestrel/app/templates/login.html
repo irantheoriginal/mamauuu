@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form class="login-painel" method="post">
+      {{ form.csrf_token }}
+      <div class="form-group">
+        <div class="login-title">
+          <h4>Login</h4>
+        </div>
+        <div class="login-form">
+          <label for="email">E-mail</label>
+          {{ form.email(class="form-control", placeholder="Digite o seu email",id="email")}}
+          {% if form.errors.email %}
+          <div class="alert alert-danger" role="alert">
+            <ul>
+              {% for e in form.errors.email %}
+                <li>
+                  {{ e }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+
+          <label for="senha">Senha</label>
+          {{ form.senha(class="form-control", placeholder="Digite a sua senha",id="senha")}}
+          {% if form.errors.senha %}
+          <div class="alert alert-danger" role="alert">
+            <ul>
+              {% for e in form.errors.senha %}
+                <li>
+                  {{ e }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+        </div>
+        <div class="btn-entrar">
+          <button class="btn btn-primary" type="submit" name="enviar">Entrar</button>
+        </div>
+      </div>
+    </form>
+
+{% endblock %}

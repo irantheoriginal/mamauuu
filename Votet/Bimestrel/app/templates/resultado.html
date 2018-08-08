@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+      <h1 class="display-4">Resultado da votação por</h1>
+      {{ data.question }}
+      <ul>
+      	{% for e in votes %}
+      	<li>{{ e }} {{ votes[e] }}</li>
+      	{%if votes [vote.Sim]>[vote.Não] %}
+      	<p>Lei Aprovada.</p>
+      		{% endfor %}
+      	{% endif %}
+      	</ul>
+
+      <p class="lead"><a href="dashboard.html">Volte para o feed.</a></p>
+    </div>
+{% endblock %}

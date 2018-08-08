@@ -1,0 +1,9 @@
+1. Instalar Flask-Sqlalchemy: pip install flask-sqlalchemy
+2. Instalar o flask-login: pip install flask-login, flask_wtf, wtforms
+3. Instalar o flask-script: pip install flask-script
+4. Instalar o flask-migrate: pip install flask-migrate
+5. Comando para criar o banco de dados:
+5.1 Ver se o sistema estar operante: python run.py runserver
+5.2 Inicialização: python run.py db init
+5.3 Migração: python run.py db migrate
+5.4 Se quiser atualizar as tabelas utilize: python run.py db upgrade

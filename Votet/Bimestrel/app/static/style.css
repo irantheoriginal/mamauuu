@@ -1,0 +1,85 @@
+.login-painel{
+  width: 50%;
+  margin: 100px 250px;
+  background-color: #dfe6e9;
+}
+
+.login-title {
+  text-align: center;
+  color: #2d3436;
+}
+
+.login-form{
+  width: 100%
+  padding: 3% 4%;
+  margin: 3%;
+}
+
+.btn-entrar{
+  width: 100%;
+  padding: 3% 4%;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.cadastro {
+  width: 50%;
+  padding: 1% 2%;
+}
+
+.perfil-user{
+  width: 25%;
+  float: left;
+  padding: 1% 2%;
+  background-color: #ff7675;
+}
+
+.perfil{
+  width: 100%;
+  padding: 2% 3%;
+  background-color: #fab1a0;
+
+}
+.publicacao{
+  width: 40%;
+  padding: 3% 4%;
+  margin: 15% 5% -10% 30%;
+  border-radius: 25px;
+  background-color: #b2bec3;
+}
+
+.titulo{
+  width: 100%;
+  padding: 3% 4%;
+  background-color: #b2bec3;
+}
+
+.centro{
+  width: 65%;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.lado-esquerdo{
+  width: 25%;
+  padding: 2% 3%;
+  background-color: #74b9ff;
+  margin-top: -40%;
+}
+
+.lado-esquerdo h4{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.seguidores{
+  width: 100%;
+  padding: 3% 4%;
+  background-color: #81ecec;
+}
+
+.comentarios{
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class="perfil-user">
+		<div class="perfil">
+			<img src="#">
+			<h5>{{ a }}</h5>
+		</div>
+	</div>
+	<div class="centro">
+		<form class="form-group" method="post">
+			<textarea cols="50" rows="4" placeholder="Faça uma lei ai moral" name="lei" id="lei"></textarea>
+			<button type="submit" class="btn btn-primary" name="btn-kkkkomaeda">Postar</button>
+		</form>
+	</div>
+	{% for public in publicacao %}
+		<div class="publicacao">
+			<div class="titulo">
+				<h5>{{ a }}</h5>
+			</div>
+			<a href="/dashboard/excluir/{{ public.id }}" type="button" class="btn btn-primary">Excluir</a>
+			<div class="conteudo">
+				<p>{{ public.conteudo }}</p>
+				<h6>{{ public.data }}</h6>
+				<a href="/poll{{ public.id }}" type="button" class="btn btn-primary">Votar</a>
+				{% if post.comments %}
+                {% if post.comments.count() > 0 %}
+                    <h2>Comments</h2>
+                    <p>
+                    {% for comment in post.comments %}
+                        <p>{{ comment.body }}</p>
+                    {% endfor %}
+                    </p>
+                {% endif %}
+                {% endif %}
+			</div>
+		</div>
+	{% endfor %}
+{% endblock %}
